@@ -1,0 +1,43 @@
+.header-wrapper {
+  position: relative;
+  background: url(../../hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+
+  max-width: 100%;
+}
+.main-info h1 {
+  font-size: 65px !important;
+  color: #1c6dd0;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.75rem;
+  text-shadow: 2px 2px #393e46;
+}
+.main-info h3 {
+  font-size: 35px !important;
+  color: #1c6dd0;
+  letter-spacing: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 2px 2px #393e46;
+}
+.main-info p {
+  color: #1c6dd0;
+  font-weight: bolder;
+  max-width: 100%;
+}

@@ -1,8 +1,13 @@
+import Navbar from "./Components/Navabar/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Hero from "./Components/Hero/Hero";
 function App() {
   return (
-    <div className="App">
-      <h1>Virtual Doctor</h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
 
