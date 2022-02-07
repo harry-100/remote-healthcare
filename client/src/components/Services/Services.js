@@ -11,7 +11,7 @@ function Services() {
               <div class="col-md-12 text-center">
                 <div class="horizontal-heading">
                   <h5>WHAT WE DO</h5>
-                  <h2>Our Services</h2>
+                  <h2 className="blue-text ">Our Services</h2>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ function Services() {
                   <div class="row">
                     <div class="col-md-2">
                       <div class="icon text-right">
-                        <i class="fas fa-bone"></i>
+                        <i class="fas fa-brain"></i>
                       </div>
                     </div>
                     <div class="col-md-10">

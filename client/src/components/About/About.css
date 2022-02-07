@@ -1,5 +1,6 @@
 #about-bottom img {
-  border-radius: 30px;
+  border-radius: 10px;
+  border: 3px solid #1c6dd0;
 }
 .content-box-lg {
   padding: 120px 0;
@@ -21,4 +22,14 @@
   font-size: 42px;
   font-weight: 100;
   line-height: 45px;
+}
+.blue-text {
+  color: #1c6dd0;
+  font-weight: bolder;
+}
+.vertical-heading {
+  display: table-cell;
+  width: 250px;
+  height: 200px;
+  vertical-align: middle;
 }

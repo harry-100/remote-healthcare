@@ -14,7 +14,7 @@ function About() {
                   <div id="about-left">
                     <div class="vertical-heading">
                       <h2>
-                        A <strong>Story</strong> About Us
+                        A <strong className="blue-text">Story</strong> About Us
                       </h2>
                     </div>
                   </div>
