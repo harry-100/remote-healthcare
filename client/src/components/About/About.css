@@ -1,0 +1,35 @@
+#about-bottom img {
+  border-radius: 10px;
+  border: 3px solid #1c6dd0;
+}
+.content-box-lg {
+  padding: 120px 0;
+}
+.content-box-md {
+  padding: 100px 0;
+}
+#about-right p:first-child {
+  margin-bottom: 30px;
+}
+#about-bottom {
+  margin-top: 60px;
+}
+#about-bottom img {
+  margin: 0 auto;
+}
+.vertical-heading h2 {
+  margin: 0 0 0 35px;
+  font-size: 42px;
+  font-weight: 100;
+  line-height: 45px;
+}
+.blue-text {
+  color: #1c6dd0;
+  font-weight: bolder;
+}
+.vertical-heading {
+  display: table-cell;
+  width: 250px;
+  height: 200px;
+  vertical-align: middle;
+}
