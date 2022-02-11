@@ -11,6 +11,7 @@ import Hero from "./components/Hero/Hero";
 import MainNavigation from "./components/Navigation/MainNavigation";
 import About from "../src/components/About/About";
 import Services from "../src/components/Services/Services";
+import Dashboard from "../src/components/Dashboard/Dashboard";
 const App = () => {
   return (
     <Router>
@@ -28,6 +29,7 @@ const App = () => {
           </Route>
           <Redirect to="/" />
         </Switch>
+        {/* <Dashboard /> */}
       </main>
     </Router>
   );
