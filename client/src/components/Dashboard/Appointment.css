@@ -1,0 +1,12 @@
+.table,
+.thead-light th {
+  color: black;
+  background-color: white;
+  border-color: #1c6dd0;
+}
+.text-center {
+  margin: 30px !important;
+  color: #1c6dd0;
+  text-transform: uppercase;
+  font-weight: bold;
+}

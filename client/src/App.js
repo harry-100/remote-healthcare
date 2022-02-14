@@ -31,6 +31,9 @@ const App = () => {
           <Route path="/dashboard" exact>
             <Dashboard />
           </Route>
+          <Route path="/appointment" exact>
+            <Appointment />
+          </Route>
           <Redirect to="/" />
         </Switch>
       </main>
