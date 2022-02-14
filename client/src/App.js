@@ -12,6 +12,7 @@ import MainNavigation from "./components/Navigation/MainNavigation";
 import About from "../src/components/About/About";
 import Services from "../src/components/Services/Services";
 import Dashboard from "../src/components/Dashboard/Dashboard";
+import Appointment from "../src/components/Dashboard/Appointment";
 const App = () => {
   return (
     <Router>
@@ -27,9 +28,11 @@ const App = () => {
           <Route path="/Services" exact>
             <Services />
           </Route>
+          <Route path="/dashboard" exact>
+            <Dashboard />
+          </Route>
           <Redirect to="/" />
         </Switch>
-        {/* <Dashboard /> */}
       </main>
     </Router>
   );
