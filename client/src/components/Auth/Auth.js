@@ -9,12 +9,11 @@ import {
   VALIDATOR_EMAIL,
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE,
-} from "../../shared/util/validators";
-import { useForm } from "../../shared/hooks/form-hook";
-import { useHttpClient } from "../../shared/hooks/http-hook";
-import { AuthContext } from "../../shared/context/auth-context";
+} from "../../util/validators";
+import { useForm } from "../../hooks/form-hook";
+import { useHttpClient } from "../../hooks/http-hook";
+import { AuthContext } from "../context/auth-context";
 import "./Auth.css";
-import ImageUpload from "../../shared/components/FormElements/ImageUpload";
 
 const Auth = () => {
   const auth = useContext(AuthContext);
@@ -41,7 +40,6 @@ const Auth = () => {
         {
           ...formState.inputs,
           name: undefined,
-          image: undefined,
         },
         formState.inputs.email.isValid && formState.inputs.password.isValid
       );
@@ -51,10 +49,6 @@ const Auth = () => {
           ...formState.inputs,
           name: {
             value: "",
-            isValid: false,
-          },
-          image: {
-            value: null,
             isValid: false,
           },
         },
@@ -124,14 +118,7 @@ const Auth = () => {
               onInput={inputHandler}
             />
           )}
-          {!isLoginMode && (
-            <ImageUpload
-              center
-              id="image"
-              onInput={inputHandler}
-              errorText="Please provide an image"
-            />
-          )}
+          
           <Input
             element="input"
             id="email"

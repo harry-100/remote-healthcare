@@ -12,6 +12,8 @@ import MainNavigation from "./components/Navigation/MainNavigation";
 import About from "../src/components/About/About";
 import Services from "../src/components/Services/Services";
 import Dashboard from "../src/components/Dashboard/Dashboard";
+import Auth from "./components/Auth/Auth";
+import { AuthContext } from "./components/context/auth-context";
 const App = () => {
   return (
     <Router>
@@ -26,6 +28,9 @@ const App = () => {
           </Route>
           <Route path="/Services" exact>
             <Services />
+          </Route>
+          <Route path="/auth" exact>  
+          <Auth />
           </Route>
           <Redirect to="/" />
         </Switch>
