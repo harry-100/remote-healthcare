@@ -12,8 +12,10 @@ import MainNavigation from "./components/Navigation/MainNavigation";
 import About from "../src/components/About/About";
 import Services from "../src/components/Services/Services";
 import Dashboard from "../src/components/Dashboard/Dashboard";
+import Appointment from "../src/components/Dashboard/Appointment";
 import Auth from "./components/Auth/Auth";
 import { AuthContext } from "./components/context/auth-context";
+
 const App = () => {
   return (
     <Router>
@@ -29,12 +31,17 @@ const App = () => {
           <Route path="/Services" exact>
             <Services />
           </Route>
-          <Route path="/auth" exact>  
-          <Auth />
+          <Route path="/dashboard" exact>
+            <Dashboard />
+          </Route>
+          <Route path="/appointment" exact>
+            <Appointment />
+          </Route>
+          <Route path="/auth" exact>
+            <Auth />
           </Route>
           <Redirect to="/" />
         </Switch>
-        {/* <Dashboard /> */}
       </main>
     </Router>
   );
